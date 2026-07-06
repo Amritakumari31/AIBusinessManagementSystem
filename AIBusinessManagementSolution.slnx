@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="Backend.API/Backend.API.csproj" />
+  <Project Path="Backend.Application/Backend.Application.csproj" Id="9118f5a9-b35e-4972-b512-1928cc32f1b4" />
+  <Project Path="Backend.Domain/Backend.Domain.csproj" Id="20cfdc9a-cafc-48c8-8288-c7570201ab20" />
+  <Project Path="Backend.Infrastructure/Backend.Infrastructure.csproj" Id="54f00603-9b19-457c-b47a-0aa2fbaf0668" />
+  <Project Path="Backend.Tests/Backend.Tests.csproj" Id="e740121b-5b24-4df1-a0e0-56e234f6682a" />
+</Solution>
