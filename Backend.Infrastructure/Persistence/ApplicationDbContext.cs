@@ -13,5 +13,6 @@ namespace Backend.Infrastructure.Persistence
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext>options):base(options)
         { }
         //We will add table here later 
+        public DbSet<Employee> Employees { get; set; }
     }
 }
