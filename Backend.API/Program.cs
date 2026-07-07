@@ -1,4 +1,6 @@
+using Backend.Application.Interfaces.Repositories;
 using Backend.Infrastructure.Persistence;
+using Backend.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 namespace Backend.API
 {
@@ -15,6 +17,10 @@ namespace Backend.API
                 builder.Configuration.GetConnectionString("DefaultConnection")));
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();
 
             var app = builder.Build();
 
