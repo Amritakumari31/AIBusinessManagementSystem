@@ -1,9 +1,12 @@
-﻿using Backend.Application.DTOs.Employee;
+﻿using Backend.API.Responses;
+using Backend.Application.DTOs.Employee;
 using Backend.Application.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Backend.API.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class EmployeeController : ControllerBase
@@ -19,21 +22,23 @@ namespace Backend.API.Controllers
         public async Task<IActionResult> GetAll()
         {
 var employees=await _employeeService.GetAllAsync();
-            return Ok(employees);
+            return Ok(new ApiResponse<IEnumerable<EmployeeDto>>(true,"Employees fetched successfully",employees));
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id) 
         {
             var employees = await _employeeService.GetByIdAsync(id);
-            return Ok(employees);
+            return Ok(new ApiResponse<EmployeeDto>(true, "Employees fetched successfully", employees));
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(CreateEmployeeDto dto)
         {
             var employee = await _employeeService.CreateAsync(dto);
-            return Ok(employee);
+            return CreatedAtAction(nameof(GetById),
+                new { id = employee.Id },
+                new ApiResponse<EmployeeDto>(true,"Employee created successfully",employee));
         }
 
         [HttpPut("{id}")]
@@ -41,7 +46,7 @@ var employees=await _employeeService.GetAllAsync();
 
         {
             await _employeeService.UpdateAsync(id, dto);
-            return Ok("Employee updated successfully");
+            return Ok(new ApiResponse<string>(true,"Employee updated successfully",null));
         }
 
         [HttpDelete("{id}")]
@@ -49,7 +54,7 @@ var employees=await _employeeService.GetAllAsync();
 
         {
             await _employeeService.DeleteAsync(id);
-            return Ok("Employee deleted successfully");
+            return Ok(new ApiResponse<string>(true,"Employee deleted successfully",null));
         }
     }
 }
