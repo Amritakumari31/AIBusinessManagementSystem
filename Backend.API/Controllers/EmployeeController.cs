@@ -32,6 +32,7 @@ var employees=await _employeeService.GetAllAsync();
             return Ok(new ApiResponse<EmployeeDto>(true, "Employees fetched successfully", employees));
         }
 
+        [Authorize(Roles ="Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(CreateEmployeeDto dto)
         {
@@ -41,6 +42,7 @@ var employees=await _employeeService.GetAllAsync();
                 new ApiResponse<EmployeeDto>(true,"Employee created successfully",employee));
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id,UpdateEmployeeDto dto)
 
@@ -49,6 +51,7 @@ var employees=await _employeeService.GetAllAsync();
             return Ok(new ApiResponse<string>(true,"Employee updated successfully",null));
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
 

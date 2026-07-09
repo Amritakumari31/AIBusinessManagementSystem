@@ -18,7 +18,8 @@ public class JwtTokenService
     {
         var claims = new[]
         {
-            new Claim(ClaimTypes.Name, username)
+            new Claim(ClaimTypes.Name, username),
+             new Claim(ClaimTypes.Role, "Admin")
         };
 
         var key = new SymmetricSecurityKey(
