@@ -10,6 +10,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Serilog;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 namespace Backend.API
 {
@@ -61,6 +63,7 @@ namespace Backend.API
 
             builder.Services.AddAuthorization();
             builder.Services.AddScoped<JwtTokenService>();
+            builder.Services.AddValidatorsFromAssemblyContaining<CreateEmployeeDtoValidator>();
 
             var app = builder.Build();
 
