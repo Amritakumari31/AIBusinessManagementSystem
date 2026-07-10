@@ -19,9 +19,9 @@ namespace Backend.API.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(int pageNumber=1, int pageSize=5,string ? search=null,string? sortBy=null,bool ascending=true)
         {
-var employees=await _employeeService.GetAllAsync();
+            var employees=await _employeeService.GetAllAsync(pageNumber, pageSize,search,sortBy,ascending);
             return Ok(new ApiResponse<IEnumerable<EmployeeDto>>(true,"Employees fetched successfully",employees));
         }
 

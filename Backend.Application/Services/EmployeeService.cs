@@ -17,9 +17,11 @@ namespace Backend.Application.Services
         {
             _employeeRepository = employeeRepository;
         }
-        public async Task<IEnumerable<EmployeeDto>> GetAllAsync()
+        public async Task<IEnumerable<EmployeeDto>> GetAllAsync(int pageNumber, int pageSize, string? search,string? sortBy, bool ascending)
         {
-            var employees = await _employeeRepository.GetAllAsync();
+            var employees = (await _employeeRepository.GetAllAsync(search,sortBy,ascending));
+           
+            employees=employees.Skip((pageNumber-1)*pageSize).Take(pageSize);
             return employees.Select(e => new EmployeeDto
             {
                 Id = e.Id,
