@@ -9,7 +9,7 @@ namespace Backend.Application.Interfaces.Services
 {
     public interface IEmployeeService
     {
-        Task<IEnumerable<EmployeeDto>> GetAllAsync(int pageNumber,int pageSize, string? search,string?sortBy,bool ascending);
+        Task<IEnumerable<EmployeeDto>> GetAllAsync(int pageNumber,int pageSize, string? search,string?sortBy,bool ascending,decimal? minSalary,decimal? maxSalary);
         Task<EmployeeDto?> GetByIdAsync(int id);
         Task<EmployeeDto> CreateAsync(CreateEmployeeDto dto);
         Task UpdateAsync(int id, UpdateEmployeeDto dto);

@@ -19,9 +19,10 @@ namespace Backend.API.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> GetAll(int pageNumber=1, int pageSize=5,string ? search=null,string? sortBy=null,bool ascending=true)
+        public async Task<IActionResult> GetAll(int pageNumber=1, int pageSize=5,string ? search=null,string? sortBy=null,bool ascending=true,decimal?minSalary=null,
+            decimal? maxSalary=null)
         {
-            var employees=await _employeeService.GetAllAsync(pageNumber, pageSize,search,sortBy,ascending);
+            var employees=await _employeeService.GetAllAsync(pageNumber, pageSize,search,sortBy,ascending,minSalary,maxSalary);
             return Ok(new ApiResponse<IEnumerable<EmployeeDto>>(true,"Employees fetched successfully",employees));
         }
 
@@ -34,8 +35,24 @@ namespace Backend.API.Controllers
 
         [Authorize(Roles ="Admin")]
         [HttpPost]
-        public async Task<IActionResult> Create(CreateEmployeeDto dto)
+        [Consumes("multipart/form-data")]
+
+        public async Task<IActionResult> Create([FromForm]CreateEmployeeDto dto)
         {
+            if(dto.ProfileImage!=null)
+            {
+                var uploadsFolder=Path.Combine(Directory.GetCurrentDirectory(), "Uploads");
+                if(!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+                var fileName = Guid.NewGuid() + Path.GetExtension(dto.ProfileImage.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+                using(var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await dto.ProfileImage.CopyToAsync(stream);
+                }
+            }
             var employee = await _employeeService.CreateAsync(dto);
             return CreatedAtAction(nameof(GetById),
                 new { id = employee.Id },

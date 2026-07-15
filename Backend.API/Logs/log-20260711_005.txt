@@ -1,0 +1,24 @@
+2026-07-11 00:32:27.960 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-11 00:32:28.913 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-11 00:32:28.919 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-11 00:32:29.504 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-11 00:32:29.511 +05:30 [INF] Hosting environment: Development
+2026-07-11 00:32:29.515 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-11 00:32:30.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-11 00:32:30.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-11 00:32:30.458 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 146.3997ms
+2026-07-11 00:32:30.604 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 295.0472ms
+2026-07-11 00:32:30.715 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-11 00:32:30.868 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 153.5418ms
+2026-07-11 00:36:09.554 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-11 00:36:10.089 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-11 00:36:10.094 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-11 00:36:10.337 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-11 00:36:10.340 +05:30 [INF] Hosting environment: Development
+2026-07-11 00:36:10.343 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-11 00:36:11.085 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-11 00:36:11.085 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-11 00:36:11.204 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 145.0958ms
+2026-07-11 00:36:11.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 238.8857ms
+2026-07-11 00:36:11.373 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-11 00:36:11.481 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 108.4886ms

@@ -1,0 +1,27 @@
+2026-07-15 20:27:13.191 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-15 20:27:13.436 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-15 20:27:13.880 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-15 20:27:13.882 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-15 20:27:14.055 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-15 20:27:14.060 +05:30 [INF] Hosting environment: Development
+2026-07-15 20:27:14.061 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-15 20:27:16.099 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.html - null null
+2026-07-15 20:27:16.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.html - 200 null text/html;charset=utf-8 479.1239ms
+2026-07-15 20:27:16.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.css - null null
+2026-07-15 20:27:16.587 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui-standalone-preset.js - null null
+2026-07-15 20:27:16.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui.css - null null
+2026-07-15 20:27:16.584 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/swagger-ui-bundle.js - null null
+2026-07-15 20:27:16.586 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.js - null null
+2026-07-15 20:27:16.685 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 20:27:16.719 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 20:27:16.765 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.js - 200 null application/javascript;charset=utf-8 178.7789ms
+2026-07-15 20:27:16.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui-standalone-preset.js - 304 null null 209.056ms
+2026-07-15 20:27:16.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui.css - 304 null null 213.7437ms
+2026-07-15 20:27:16.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/swagger-ui-bundle.js - 304 null null 211.1015ms
+2026-07-15 20:27:16.796 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.css - 304 null null 211.4096ms
+2026-07-15 20:27:16.876 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 255.5675ms
+2026-07-15 20:27:17.036 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 317.5994ms
+2026-07-15 20:27:17.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 20:27:17.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/favicon-32x32.png - null null
+2026-07-15 20:27:17.316 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.5237ms
+2026-07-15 20:27:17.374 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/favicon-32x32.png - 304 null null 65.8164ms

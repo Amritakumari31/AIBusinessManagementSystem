@@ -25,6 +25,7 @@
   <ItemGroup>
     <Folder Include="Extensions\" />
     <Folder Include="Configurations\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
 
   <ItemGroup>

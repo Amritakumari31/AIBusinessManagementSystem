@@ -9,6 +9,7 @@ namespace Backend.Application.Interfaces.Repositories
 {
     public interface IEmployeeRepository: IGenericRepository<Employee>
     {
-        Task<IEnumerable<Employee>> GetAllAsync(string? search,string?sortBy,bool ascending);
+        Task<IEnumerable<Employee>> GetAllAsync(int pageNumber,int pageSize,string? search,string?sortBy,bool ascending, decimal? minSalary,decimal?maxSalary);
+        
     }
 }

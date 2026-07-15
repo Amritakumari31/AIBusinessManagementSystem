@@ -19,12 +19,21 @@ namespace Backend.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task<IEnumerable<Employee>> GetAllAsync(string? search,string? sortBy,bool ascending)
+        public async Task<IEnumerable<Employee>> GetAllAsync(int pageNumber,int pageSize,string? search,string? sortBy,bool ascending, decimal? minSalary,decimal? maxSalary)
         {
             var query =  _context.Employees.AsQueryable();
 
+            if(minSalary.HasValue)
+            {
+                query = query.Where(e => e.Salary >= minSalary.Value);
+            }
+            if(maxSalary.HasValue)
+            {
+                query = query.Where(e => e.Salary <= maxSalary.Value);
+            }
+
             //Search
-            if(!string.IsNullOrWhiteSpace(search))
+            if (!string.IsNullOrWhiteSpace(search))
             {
                 query = query.Where(e => e.Name.Contains(search) || e.Email.Contains(search));
             } 
@@ -47,6 +56,7 @@ namespace Backend.Infrastructure.Repositories
                 }
                
             }
+            query=query.Skip((pageNumber - 1) * pageSize).Take(pageSize);
             return await query.ToListAsync();
         }
     }

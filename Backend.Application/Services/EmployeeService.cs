@@ -17,11 +17,19 @@ namespace Backend.Application.Services
         {
             _employeeRepository = employeeRepository;
         }
-        public async Task<IEnumerable<EmployeeDto>> GetAllAsync(int pageNumber, int pageSize, string? search,string? sortBy, bool ascending)
+        public async Task<IEnumerable<EmployeeDto>> GetAllAsync(int pageNumber, int pageSize, string? search,string? sortBy, bool ascending,decimal? minSalary,decimal? maxSalary)
         {
-            var employees = (await _employeeRepository.GetAllAsync(search,sortBy,ascending));
-           
-            employees=employees.Skip((pageNumber-1)*pageSize).Take(pageSize);
+            var employees = (await _employeeRepository.GetAllAsync(pageNumber,pageSize,search,sortBy,ascending,minSalary,maxSalary));
+            if(minSalary.HasValue)
+            {
+                employees = employees.Where(e => e.Salary >= minSalary.Value);
+            }
+            if(maxSalary.HasValue)
+            {
+                employees = employees.Where(e => e.Salary <= maxSalary.Value);
+            }
+
+            
             return employees.Select(e => new EmployeeDto
             {
                 Id = e.Id,
@@ -47,11 +55,29 @@ namespace Backend.Application.Services
         }
         public async Task<EmployeeDto> CreateAsync(CreateEmployeeDto dto)
         {
+            string? imagePath = null;
+            if(dto.ProfileImage!=null)
+            {
+                var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+                if(!Directory.Exists(uploadsFolder))
+                {
+                    Directory.CreateDirectory(uploadsFolder);
+                }
+                var fileName = Guid.NewGuid() + Path.GetExtension(dto.ProfileImage.FileName);
+                var filePath=Path.Combine(uploadsFolder, fileName);
+                using(var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await dto.ProfileImage.CopyToAsync(stream);
+                }
+                imagePath= "/uploads/" + fileName;
+            }
             var employee = new Employee
             {
                 Name = dto.Name,
                 Email = dto.Email,
-                Salary = dto.Salary
+                Salary = dto.Salary,
+                Department = dto.Department,
+                ProfileImage=imagePath
 
             };
             await _employeeRepository.AddAsync(employee);
