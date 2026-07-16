@@ -1,0 +1,65 @@
+2026-07-15 22:51:54.924 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-15 22:51:55.277 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-15 22:51:55.858 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-15 22:51:55.863 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-15 22:51:56.216 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-15 22:51:56.220 +05:30 [INF] Hosting environment: Development
+2026-07-15 22:51:56.222 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-15 22:51:57.331 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 22:51:57.331 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 22:51:57.447 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 148.4953ms
+2026-07-15 22:51:57.558 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 266.6665ms
+2026-07-15 22:51:57.666 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 22:51:57.843 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 176.8075ms
+2026-07-15 22:52:14.620 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/login - application/json 51
+2026-07-15 22:52:14.730 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-15 22:52:14.777 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.API.Requests.LoginRequest) on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-15 22:52:15.028 +05:30 [INF] Executing OkObjectResult, writing value of type 'Backend.API.Responses.TokenResponse'.
+2026-07-15 22:52:15.044 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Login (Backend.API) in 254.9068ms
+2026-07-15 22:52:15.047 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-15 22:52:15.049 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/login - 200 null application/json; charset=utf-8 429.6202ms
+2026-07-15 22:52:41.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee?pageNumber=1&pageSize=5&ascending=true - null null
+2026-07-15 22:52:41.509 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-15 22:52:41.527 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-07-15 22:52:41.532 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee?pageNumber=1&pageSize=5&ascending=true - 302 0 null 105.1699ms
+2026-07-15 22:52:41.540 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee%3FpageNumber%3D1%26pageSize%3D5%26ascending%3Dtrue - null null
+2026-07-15 22:52:41.553 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee%3FpageNumber%3D1%26pageSize%3D5%26ascending%3Dtrue - 404 0 null 12.5014ms
+2026-07-15 22:52:41.562 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7124/Account/Login, Response status code: 404
+2026-07-15 22:53:28.053 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.html - null null
+2026-07-15 22:53:28.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.html - 200 null text/html;charset=utf-8 338.2229ms
+2026-07-15 22:53:28.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 22:53:28.403 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 22:53:28.485 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.3878ms
+2026-07-15 22:53:28.486 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 82.8549ms
+2026-07-15 22:53:28.553 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 22:53:28.599 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 45.4955ms
+2026-07-15 22:53:37.670 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee?pageNumber=1&pageSize=5&ascending=true - null null
+2026-07-15 22:53:37.688 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-15 22:53:37.695 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-07-15 22:53:37.698 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee?pageNumber=1&pageSize=5&ascending=true - 302 0 null 27.6649ms
+2026-07-15 22:53:37.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee%3FpageNumber%3D1%26pageSize%3D5%26ascending%3Dtrue - null null
+2026-07-15 22:53:37.712 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee%3FpageNumber%3D1%26pageSize%3D5%26ascending%3Dtrue - 404 0 null 11.6082ms
+2026-07-15 22:53:37.720 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7124/Account/Login, Response status code: 404
+2026-07-15 22:56:44.923 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-15 22:56:45.189 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-15 22:56:45.601 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-15 22:56:45.604 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-15 22:56:45.885 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-15 22:56:45.890 +05:30 [INF] Hosting environment: Development
+2026-07-15 22:56:45.894 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-15 22:56:47.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 22:56:47.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 22:56:47.211 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 160.423ms
+2026-07-15 22:56:47.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 300.1816ms
+2026-07-15 22:56:47.409 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 22:56:47.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.5011ms
+2026-07-15 22:56:55.907 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee/test - null null
+2026-07-15 22:56:55.972 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-15 22:56:55.995 +05:30 [INF] Route matched with {action = "Test", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Test() on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-15 22:56:57.407 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-15 22:56:57.537 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-15 22:56:57.548 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Test (Backend.API) in 1542.2118ms
+2026-07-15 22:56:57.552 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-15 22:56:57.565 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee/test - 200 null text/plain; charset=utf-8 1657.9182ms

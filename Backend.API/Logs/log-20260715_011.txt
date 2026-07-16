@@ -1,0 +1,80 @@
+2026-07-15 22:56:44.923 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-15 22:56:45.189 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-15 22:56:45.601 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-15 22:56:45.604 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-15 22:56:45.885 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-15 22:56:45.890 +05:30 [INF] Hosting environment: Development
+2026-07-15 22:56:45.894 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-15 22:56:47.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 22:56:47.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 22:56:47.211 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 160.423ms
+2026-07-15 22:56:47.308 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 300.1816ms
+2026-07-15 22:56:47.409 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 22:56:47.537 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 128.5011ms
+2026-07-15 22:56:55.907 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee/test - null null
+2026-07-15 22:56:55.972 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-15 22:56:55.995 +05:30 [INF] Route matched with {action = "Test", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Test() on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-15 22:56:57.407 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-15 22:56:57.537 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-15 22:56:57.548 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Test (Backend.API) in 1542.2118ms
+2026-07-15 22:56:57.552 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-15 22:56:57.565 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee/test - 200 null text/plain; charset=utf-8 1657.9182ms
+2026-07-15 22:59:19.674 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-15 22:59:20.024 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-15 22:59:20.514 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-15 22:59:20.523 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-15 22:59:21.106 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-15 22:59:21.110 +05:30 [INF] Hosting environment: Development
+2026-07-15 22:59:21.113 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-15 22:59:21.672 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 22:59:21.672 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 22:59:21.795 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 153.9806ms
+2026-07-15 22:59:21.919 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 283.002ms
+2026-07-15 22:59:22.019 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 22:59:22.180 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Employee" for actions - Backend.API.Controllers.EmployeeController.GetAll (Backend.API), Backend.API.Controllers.EmployeeController.GetAll (Backend.API). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-15 22:59:22.223 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 203.4551ms
+2026-07-15 22:59:33.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.html - null null
+2026-07-15 22:59:33.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.html - 200 null text/html;charset=utf-8 367.8549ms
+2026-07-15 22:59:33.934 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 22:59:33.935 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 22:59:33.989 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 54.401ms
+2026-07-15 22:59:33.999 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.4358ms
+2026-07-15 22:59:34.060 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 22:59:34.097 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Employee" for actions - Backend.API.Controllers.EmployeeController.GetAll (Backend.API), Backend.API.Controllers.EmployeeController.GetAll (Backend.API). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-15 22:59:34.128 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 67.728ms
+2026-07-15 23:00:29.369 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/index.html - null null
+2026-07-15 23:00:29.436 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/index.html - 200 null text/html;charset=utf-8 67.9437ms
+2026-07-15 23:00:29.477 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 23:00:29.477 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 23:00:29.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 24.6709ms
+2026-07-15 23:00:29.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.8804ms
+2026-07-15 23:00:29.605 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 23:00:29.647 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Employee" for actions - Backend.API.Controllers.EmployeeController.GetAll (Backend.API), Backend.API.Controllers.EmployeeController.GetAll (Backend.API). Actions require a unique method/path combination for Swagger/OpenAPI 2.0 and 3.0. Use ConflictingActionsResolver as a workaround or provide your own implementation of PathGroupSelector.
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.PrepareGenerateOperation(IGrouping`2 group)
+   at System.Linq.Enumerable.IteratorSelectIterator`2.MoveNext()
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperationsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository, Func`4 operationsGenerator)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePathsAsync(OpenApiDocument document, IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-15 23:00:29.674 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 68.9457ms

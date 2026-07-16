@@ -1,0 +1,21 @@
+2026-07-15 23:58:58.385 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-15 23:58:58.622 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-15 23:58:59.037 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-15 23:58:59.042 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-15 23:58:59.334 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-15 23:58:59.340 +05:30 [INF] Hosting environment: Development
+2026-07-15 23:58:59.346 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-15 23:58:59.834 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 23:58:59.834 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 23:58:59.983 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 183.256ms
+2026-07-15 23:59:00.125 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 331.0142ms
+2026-07-15 23:59:00.226 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 23:59:00.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.5921ms
+2026-07-15 23:59:17.142 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee/test - null null
+2026-07-15 23:59:17.211 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-15 23:59:17.236 +05:30 [INF] Route matched with {action = "Test", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Test() on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-15 23:59:18.694 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-15 23:59:18.858 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-15 23:59:18.877 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Test (Backend.API) in 1624.0151ms
+2026-07-15 23:59:18.889 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-15 23:59:18.909 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee/test - 200 null text/plain; charset=utf-8 1767.4598ms

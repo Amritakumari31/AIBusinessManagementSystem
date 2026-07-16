@@ -1,0 +1,82 @@
+2026-07-16 00:40:07.516 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-16 00:40:07.829 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-16 00:40:08.294 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-16 00:40:08.297 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-16 00:40:08.880 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-16 00:40:08.884 +05:30 [INF] Hosting environment: Development
+2026-07-16 00:40:08.888 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-16 00:40:10.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-16 00:40:10.047 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-16 00:40:10.164 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 134.6822ms
+2026-07-16 00:40:10.307 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 295.5938ms
+2026-07-16 00:40:10.416 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-16 00:40:10.577 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 161.6244ms
+2026-07-16 00:40:16.916 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/register - null 0
+2026-07-16 00:40:17.001 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Register (Backend.API)'
+2026-07-16 00:40:17.054 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-16 00:40:18.512 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-16 00:40:20.241 +05:30 [INF] Executed DbCommand (166ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-07-16 00:40:20.318 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2026-07-16 00:40:20.347 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Register (Backend.API) in 3280.1584ms
+2026-07-16 00:40:20.355 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Register (Backend.API)'
+2026-07-16 00:40:20.381 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/register - 400 null application/json; charset=utf-8 3465.2562ms
+2026-07-16 00:41:47.095 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/register - null 0
+2026-07-16 00:41:47.123 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Register (Backend.API)'
+2026-07-16 00:41:47.149 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-16 00:41:47.253 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-07-16 00:41:47.260 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2026-07-16 00:41:47.265 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Register (Backend.API) in 110.3628ms
+2026-07-16 00:41:47.270 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Register (Backend.API)'
+2026-07-16 00:41:47.273 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/register - 400 null application/json; charset=utf-8 178.1322ms
+2026-07-16 00:43:25.965 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/register - null 0
+2026-07-16 00:43:25.994 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Register (Backend.API)'
+2026-07-16 00:43:25.998 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-16 00:43:36.315 +05:30 [INF] Executed DbCommand (10,274ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-07-16 00:43:36.322 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.Collections.Generic.List`1[[Microsoft.AspNetCore.Identity.IdentityError, Microsoft.Extensions.Identity.Core, Version=9.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2026-07-16 00:43:36.326 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Register (Backend.API) in 10320.5183ms
+2026-07-16 00:43:36.332 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Register (Backend.API)'
+2026-07-16 00:43:36.335 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/register - 400 null application/json; charset=utf-8 10370.9672ms
+2026-07-16 00:45:09.918 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-16 00:45:10.217 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-16 00:45:10.616 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-16 00:45:10.620 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-16 00:45:11.300 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-16 00:45:11.305 +05:30 [INF] Hosting environment: Development
+2026-07-16 00:45:11.308 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-16 00:45:12.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-16 00:45:12.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-16 00:45:12.183 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 176.8567ms
+2026-07-16 00:45:12.324 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 328.5814ms
+2026-07-16 00:45:12.435 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-16 00:45:12.573 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 138.0482ms
+2026-07-16 00:45:18.368 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/register - null 0
+2026-07-16 00:45:18.447 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Register (Backend.API)'
+2026-07-16 00:45:18.486 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-16 00:45:19.978 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-16 00:45:21.477 +05:30 [INF] Executed DbCommand (90ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-07-16 00:45:21.737 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-07-16 00:45:22.121 +05:30 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [FullName], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2026-07-16 00:45:22.172 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-16 00:45:22.184 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Register (Backend.API) in 3688.6331ms
+2026-07-16 00:45:22.187 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Register (Backend.API)'
+2026-07-16 00:45:22.204 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/register - 200 null text/plain; charset=utf-8 3836.3214ms
