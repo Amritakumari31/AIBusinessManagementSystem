@@ -1,0 +1,65 @@
+2026-07-15 22:38:45.005 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-15 22:38:45.296 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-15 22:38:45.753 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-15 22:38:45.758 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-15 22:38:46.084 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-15 22:38:46.088 +05:30 [INF] Hosting environment: Development
+2026-07-15 22:38:46.091 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-15 22:38:46.829 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 22:38:46.829 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 22:38:46.944 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 150.8293ms
+2026-07-15 22:38:47.091 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 308.2992ms
+2026-07-15 22:38:47.177 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 22:38:47.298 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 122.2952ms
+2026-07-15 22:39:11.698 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/login - application/json 51
+2026-07-15 22:39:11.792 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-15 22:39:11.843 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.API.Requests.LoginRequest) on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-15 22:39:12.140 +05:30 [INF] Executing OkObjectResult, writing value of type 'Backend.API.Responses.TokenResponse'.
+2026-07-15 22:39:12.156 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Login (Backend.API) in 292.2517ms
+2026-07-15 22:39:12.159 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-15 22:39:12.164 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/login - 200 null application/json; charset=utf-8 466.0082ms
+2026-07-15 22:39:46.272 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Employee - multipart/form-data; boundary=----WebKitFormBoundaryMKf5UsaT1OAfBLiZ 535
+2026-07-15 22:39:46.341 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-07-15 22:39:46.355 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-07-15 22:39:46.358 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Employee - 302 0 null 85.8933ms
+2026-07-15 22:39:46.366 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee - null null
+2026-07-15 22:39:46.377 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee - 404 0 null 10.4329ms
+2026-07-15 22:39:46.389 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7124/Account/Login, Response status code: 404
+2026-07-15 22:41:57.995 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-15 22:41:58.277 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-15 22:41:58.794 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-15 22:41:58.800 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-15 22:41:59.073 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-15 22:41:59.078 +05:30 [INF] Hosting environment: Development
+2026-07-15 22:41:59.083 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-15 22:41:59.597 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-15 22:41:59.597 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-15 22:41:59.700 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 130.6255ms
+2026-07-15 22:41:59.795 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 231.8239ms
+2026-07-15 22:41:59.888 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-15 22:42:00.043 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 155.8736ms
+2026-07-15 22:42:24.425 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/login - application/json 51
+2026-07-15 22:42:24.585 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-15 22:42:24.684 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.API.Requests.LoginRequest) on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-15 22:42:25.060 +05:30 [INF] Executing OkObjectResult, writing value of type 'Backend.API.Responses.TokenResponse'.
+2026-07-15 22:42:25.084 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Login (Backend.API) in 380.4569ms
+2026-07-15 22:42:25.093 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-15 22:42:25.099 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/login - 200 null application/json; charset=utf-8 674.0073ms
+2026-07-15 22:42:58.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee?pageNumber=1&pageSize=5&ascending=true - null null
+2026-07-15 22:42:58.419 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-15 22:42:58.435 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-07-15 22:42:58.438 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee?pageNumber=1&pageSize=5&ascending=true - 302 0 null 94.9187ms
+2026-07-15 22:42:58.444 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee%3FpageNumber%3D1%26pageSize%3D5%26ascending%3Dtrue - null null
+2026-07-15 22:42:58.455 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee%3FpageNumber%3D1%26pageSize%3D5%26ascending%3Dtrue - 404 0 null 11.6571ms
+2026-07-15 22:42:58.468 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7124/Account/Login, Response status code: 404
+2026-07-15 22:43:12.862 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee/1 - null null
+2026-07-15 22:43:12.880 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-07-15 22:43:12.886 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2026-07-15 22:43:12.890 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee/1 - 302 0 null 27.4949ms
+2026-07-15 22:43:12.893 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee%2F1 - null null
+2026-07-15 22:43:12.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/Account/Login?ReturnUrl=%2Fapi%2FEmployee%2F1 - 404 0 null 20.3502ms
+2026-07-15 22:43:12.933 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7124/Account/Login, Response status code: 404

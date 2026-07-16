@@ -17,13 +17,24 @@ namespace Backend.API.Controllers
             _employeeService = employeeService;
         }
 
+        [HttpGet("test")]
+        public IActionResult Test() 
+        {
+            return Ok("Employee Controller Working");
+        }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll(int pageNumber=1, int pageSize=5,string ? search=null,string? sortBy=null,bool ascending=true,decimal?minSalary=null,
-            decimal? maxSalary=null)
+        public IActionResult GetAll()
         {
-            var employees=await _employeeService.GetAllAsync(pageNumber, pageSize,search,sortBy,ascending,minSalary,maxSalary);
-            return Ok(new ApiResponse<IEnumerable<EmployeeDto>>(true,"Employees fetched successfully",employees));
+            return Ok("GetAll Working");
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll(int pageNumber = 1, int pageSize = 5, string? search = null, string? sortBy = null, bool ascending = true, decimal? minSalary = null,
+            decimal? maxSalary = null)
+        {
+            var employees = await _employeeService.GetAllAsync(pageNumber, pageSize, search, sortBy, ascending, minSalary, maxSalary);
+            return Ok(new ApiResponse<IEnumerable<EmployeeDto>>(true, "Employees fetched successfully", employees));
         }
 
         [HttpGet("{id}")]
@@ -33,7 +44,7 @@ namespace Backend.API.Controllers
             return Ok(new ApiResponse<EmployeeDto>(true, "Employees fetched successfully", employees));
         }
 
-        [Authorize(Roles ="Admin")]
+       // [Authorize(Roles ="Admin")]
         [HttpPost]
         [Consumes("multipart/form-data")]
 
@@ -54,12 +65,14 @@ namespace Backend.API.Controllers
                 }
             }
             var employee = await _employeeService.CreateAsync(dto);
-            return CreatedAtAction(nameof(GetById),
-                new { id = employee.Id },
-                new ApiResponse<EmployeeDto>(true,"Employee created successfully",employee));
+
+            return Ok(new ApiResponse<EmployeeDto>(true, "Employee created successfully", employee));
+            //return CreatedAtAction(nameof(GetById),
+            //    new { id = employee.Id },
+            //    new ApiResponse<EmployeeDto>(true,"Employee created successfully",employee));
         }
 
-        [Authorize(Roles = "Admin")]
+       // [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id,UpdateEmployeeDto dto)
 
@@ -68,7 +81,7 @@ namespace Backend.API.Controllers
             return Ok(new ApiResponse<string>(true,"Employee updated successfully",null));
         }
 
-        [Authorize(Roles = "Admin")]
+       // [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
 

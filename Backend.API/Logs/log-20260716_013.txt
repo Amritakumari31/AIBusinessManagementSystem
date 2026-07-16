@@ -1,0 +1,155 @@
+2026-07-16 01:48:50.767 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-16 01:48:51.040 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-16 01:48:51.421 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-16 01:48:51.432 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-16 01:48:52.025 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-16 01:48:52.029 +05:30 [INF] Hosting environment: Development
+2026-07-16 01:48:52.033 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-16 01:48:53.167 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-16 01:48:53.167 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-16 01:48:53.287 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 149.21ms
+2026-07-16 01:48:53.385 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 257.9604ms
+2026-07-16 01:48:53.487 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-16 01:48:53.598 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.1786ms
+2026-07-16 01:49:19.522 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/login - application/json 52
+2026-07-16 01:49:19.774 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-16 01:49:19.809 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.API.Requests.LoginRequest) on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-16 01:49:21.217 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-16 01:49:22.751 +05:30 [INF] Executed DbCommand (105ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-07-16 01:49:23.289 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-07-16 01:49:23.385 +05:30 [INF] Executing OkObjectResult, writing value of type 'Backend.API.Responses.TokenResponse'.
+2026-07-16 01:49:23.401 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Login (Backend.API) in 3578.3113ms
+2026-07-16 01:49:23.407 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-16 01:49:23.434 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/login - 200 null application/json; charset=utf-8 3912.4248ms
+2026-07-16 01:49:45.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee/test - null null
+2026-07-16 01:49:45.832 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-16 01:49:45.843 +05:30 [INF] Route matched with {action = "Test", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Test() on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:49:45.963 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-16 01:49:45.968 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Test (Backend.API) in 120.1807ms
+2026-07-16 01:49:45.976 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-16 01:49:45.980 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee/test - 200 null text/plain; charset=utf-8 275.6075ms
+2026-07-16 01:50:28.290 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee/test - null null
+2026-07-16 01:50:28.323 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-16 01:50:28.327 +05:30 [INF] Route matched with {action = "Test", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Test() on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:50:28.356 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-16 01:50:28.360 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Test (Backend.API) in 24.0356ms
+2026-07-16 01:50:28.369 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-16 01:50:28.375 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee/test - 200 null text/plain; charset=utf-8 86.0918ms
+2026-07-16 01:50:36.778 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee - null null
+2026-07-16 01:50:36.791 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.GetAll (Backend.API)'
+2026-07-16 01:50:36.796 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:50:36.810 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-16 01:50:36.817 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.GetAll (Backend.API) in 12.6154ms
+2026-07-16 01:50:36.821 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.GetAll (Backend.API)'
+2026-07-16 01:50:36.823 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee - 200 null text/plain; charset=utf-8 45.217ms
+2026-07-16 01:50:50.652 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Employee - multipart/form-data; boundary=----WebKitFormBoundary7VKAucBAmcxKeqB5 535
+2026-07-16 01:50:50.670 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Create (Backend.API)'
+2026-07-16 01:50:50.689 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Backend.Application.DTOs.Employee.CreateEmployeeDto) on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:50:50.983 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([CreatedAt], [Department], [Email], [IsDeleted], [Name], [ProfileImage], [Salary], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-07-16 01:50:51.041 +05:30 [INF] Executing OkObjectResult, writing value of type 'Backend.API.Responses.ApiResponse`1[[Backend.Application.DTOs.Employee.EmployeeDto, Backend.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-16 01:50:51.061 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Create (Backend.API) in 361.4527ms
+2026-07-16 01:50:51.065 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Create (Backend.API)'
+2026-07-16 01:50:51.068 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Employee - 200 null application/json; charset=utf-8 416.2574ms
+2026-07-16 01:51:13.040 +05:30 [INF] User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-07-16 01:51:13.340 +05:30 [WRN] The WebRootPath was not found: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API\wwwroot. Static files may be unavailable.
+2026-07-16 01:51:13.820 +05:30 [INF] Now listening on: https://localhost:7124
+2026-07-16 01:51:13.824 +05:30 [INF] Now listening on: http://localhost:5154
+2026-07-16 01:51:14.384 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-07-16 01:51:14.389 +05:30 [INF] Hosting environment: Development
+2026-07-16 01:51:14.393 +05:30 [INF] Content root path: C:\Users\HP\OneDrive\Desktop\Ai business management platform\AIBusinessManagementSolution\Backend.API
+2026-07-16 01:51:15.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - null null
+2026-07-16 01:51:15.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/_vs/browserLink - null null
+2026-07-16 01:51:15.296 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_framework/aspnetcore-browser-refresh.js - 200 14927 application/javascript; charset=utf-8 238.6244ms
+2026-07-16 01:51:15.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/_vs/browserLink - 200 null text/javascript; charset=UTF-8 337.2121ms
+2026-07-16 01:51:15.487 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - null null
+2026-07-16 01:51:15.675 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 187.9215ms
+2026-07-16 01:51:40.093 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Auth/login - application/json 52
+2026-07-16 01:51:40.379 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-16 01:51:40.464 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.API.Requests.LoginRequest) on controller Backend.API.Controllers.AuthController (Backend.API).
+2026-07-16 01:51:42.209 +05:30 [WRN] No store type was specified for the decimal property 'Salary' on entity type 'Employee'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-16 01:51:43.909 +05:30 [INF] Executed DbCommand (132ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[FullName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2026-07-16 01:51:44.497 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2026-07-16 01:51:44.610 +05:30 [INF] Executing OkObjectResult, writing value of type 'Backend.API.Responses.TokenResponse'.
+2026-07-16 01:51:44.629 +05:30 [INF] Executed action Backend.API.Controllers.AuthController.Login (Backend.API) in 4154.853ms
+2026-07-16 01:51:44.635 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.AuthController.Login (Backend.API)'
+2026-07-16 01:51:44.664 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Auth/login - 200 null application/json; charset=utf-8 4571.8506ms
+2026-07-16 01:52:08.835 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee/test - null null
+2026-07-16 01:52:09.018 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-16 01:52:09.024 +05:30 [INF] Route matched with {action = "Test", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Test() on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:52:09.125 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-16 01:52:09.130 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Test (Backend.API) in 92.9257ms
+2026-07-16 01:52:09.140 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Test (Backend.API)'
+2026-07-16 01:52:09.145 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee/test - 200 null text/plain; charset=utf-8 310.7222ms
+2026-07-16 01:52:17.692 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7124/api/Employee - null null
+2026-07-16 01:52:17.733 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.GetAll (Backend.API)'
+2026-07-16 01:52:17.738 +05:30 [INF] Route matched with {action = "GetAll", controller = "Employee"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:52:17.767 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-07-16 01:52:17.770 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.GetAll (Backend.API) in 28.0317ms
+2026-07-16 01:52:17.774 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.GetAll (Backend.API)'
+2026-07-16 01:52:17.777 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7124/api/Employee - 200 null text/plain; charset=utf-8 85.0513ms
+2026-07-16 01:52:30.620 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7124/api/Employee/3 - null null
+2026-07-16 01:52:30.635 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Delete (Backend.API)'
+2026-07-16 01:52:30.642 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:52:30.730 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[CreatedAt], [e].[Department], [e].[Email], [e].[IsDeleted], [e].[Name], [e].[ProfileImage], [e].[Salary], [e].[UpdatedAt]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__p_0
+2026-07-16 01:54:38.919 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Delete (Backend.API) in 128240.5078ms
+2026-07-16 01:54:38.961 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Employee - multipart/form-data; boundary=----WebKitFormBoundaryCWWHyEzCp8Mclhkh 535
+2026-07-16 01:54:39.059 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Delete (Backend.API)'
+2026-07-16 01:54:39.064 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Create (Backend.API)'
+2026-07-16 01:54:39.187 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7124/api/Employee/3 - 500 null application/json 128566.7921ms
+2026-07-16 01:54:39.188 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Backend.Application.DTOs.Employee.CreateEmployeeDto) on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:54:39.210 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-07-16 01:54:39.240 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Create (Backend.API) in 45.571ms
+2026-07-16 01:54:39.243 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Create (Backend.API)'
+2026-07-16 01:54:39.244 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Employee - 499 null application/problem+json; charset=utf-8 284.0388ms
+2026-07-16 01:54:42.751 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7124/api/Employee - multipart/form-data; boundary=----WebKitFormBoundaryddAOOb7Uza4ZNBy5 535
+2026-07-16 01:54:42.765 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Create (Backend.API)'
+2026-07-16 01:54:42.767 +05:30 [INF] Route matched with {action = "Create", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(Backend.Application.DTOs.Employee.CreateEmployeeDto) on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:54:42.933 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p7='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([CreatedAt], [Department], [Email], [IsDeleted], [Name], [ProfileImage], [Salary], [UpdatedAt])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2026-07-16 01:54:42.963 +05:30 [INF] Executing OkObjectResult, writing value of type 'Backend.API.Responses.ApiResponse`1[[Backend.Application.DTOs.Employee.EmployeeDto, Backend.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-07-16 01:54:42.973 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Create (Backend.API) in 202.9204ms
+2026-07-16 01:54:42.977 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Create (Backend.API)'
+2026-07-16 01:54:42.979 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7124/api/Employee - 200 null application/json; charset=utf-8 227.507ms
+2026-07-16 01:54:53.288 +05:30 [INF] Request starting HTTP/2 DELETE https://localhost:7124/api/Employee/5 - null null
+2026-07-16 01:54:53.297 +05:30 [INF] Executing endpoint 'Backend.API.Controllers.EmployeeController.Delete (Backend.API)'
+2026-07-16 01:54:53.301 +05:30 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller Backend.API.Controllers.EmployeeController (Backend.API).
+2026-07-16 01:54:53.315 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[CreatedAt], [e].[Department], [e].[Email], [e].[IsDeleted], [e].[Name], [e].[ProfileImage], [e].[Salary], [e].[UpdatedAt]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__p_0
+2026-07-16 01:54:53.339 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Employees]
+OUTPUT 1
+WHERE [Id] = @p0;
+2026-07-16 01:54:53.346 +05:30 [INF] Executing OkObjectResult, writing value of type 'Backend.API.Responses.ApiResponse`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-07-16 01:54:53.349 +05:30 [INF] Executed action Backend.API.Controllers.EmployeeController.Delete (Backend.API) in 40.2396ms
+2026-07-16 01:54:53.351 +05:30 [INF] Executed endpoint 'Backend.API.Controllers.EmployeeController.Delete (Backend.API)'
+2026-07-16 01:54:53.353 +05:30 [INF] Request finished HTTP/2 DELETE https://localhost:7124/api/Employee/5 - 200 null application/json; charset=utf-8 64.3949ms
